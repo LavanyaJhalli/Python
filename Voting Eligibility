@@ -1,0 +1,12 @@
+gender=input("enter the gender of voter as b/g:")
+age=int(input("enter the age:"))
+
+if age>=18:
+    if gender=="b" or gender=="B":
+        print("allowed to cast vote in room no. 20")
+    elif gender=="g" or gender=="G":
+         print("allowed to cast vote in room no. 25")
+    else:
+         print("gender not entered in terms of b or g")
+else:
+    print("not allowed to vote")
