@@ -1,0 +1,30 @@
+#an iterator is an obj that can be iterated upon which means that you can traverse over all the values
+'''
+to create an iteratable obj u hv to use:
+    __iter()__  #returns the iteratble obj as it self
+                #used in for n in statements
+    __next()__  #return the next value
+
+Note:in order to avoid the iteration to go on forever raise the stop iteration
+    exception
+'''
+class demo:
+    def __init__(self,x):
+        self.i=10
+        self.n=x
+    def __iter__(self):
+        return self
+    def __next__(self):
+        if self.i<self.n:
+            i=self.i
+            self.i+=1
+            return i
+        else:
+            raise StopIteration()
+n=demo(15)
+print(list(n))
+n=demo(67)
+for i in n:
+    print(i,end="#")
+
+        
