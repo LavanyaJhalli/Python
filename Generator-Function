@@ -1,0 +1,43 @@
+'''
+iterators allows us to create / work with lazy
+iteratable which means that you can you the
+iterable for lazy evaluation.
+This allow you to get the next element in the list without
+recalculation.
+'''
+#Generators
+'''
+these functions act like a regular function with one diff
+a reg function has return statement and generator function has
+yield statement.
+A generator function returns an iterator.
+'''
+def test_seq():
+    n=0
+    while n<10:
+        yield n
+        n+=1 
+for i in test_seq():
+    print(i,end=" ")
+print()
+#generate the even values from 0-100
+
+def even():
+    n=0
+    while n<=100:
+        if n%2==0:
+            yield n
+        n+=1
+for i in even():
+    print(i,end=" ")
+print()
+#reverse of a string
+def reverse_string(s):
+    l=len(s)
+    for x in range(l-1,-1,-1):
+        yield s[x]
+for c in reverse_string("lavanya"):
+    print(c)
+            
+
+
