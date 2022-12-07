@@ -1,0 +1,53 @@
+#exception handling
+'''
+errors in python are of 2 types:
+
+    syntax errors and exceptions
+
+    errors are the prblm that occur due to some incorrect syntax which
+    will further stop the execution of the program
+    on the other hand exception occurs when some internal event
+    occurs which changes the nrml flow of the program
+    exceptions are raised when the prgm is syntactically correct but still
+    code execution results in error which changes the normal flow of the
+    execution
+'''
+
+#diff ways to handle exception:
+'''
+    1.try- include the block where the exception is raised
+    2.except-catches the exception
+'''
+l=[1,2,3,4,5]
+try:
+    print('first element=',l[0])
+    print('element=',l[6])
+except:
+    print('index out of range')
+
+'''
+a try statement can have more than one except block which is used to handle
+which is used to handle specific exception
+'''
+
+#at a time only one handler will be executed
+#syntax
+'''
+try:
+    statements
+except:
+    statements
+except:
+    statements
+'''
+def display(n):
+    if n<4:
+        p=n/(n-3)
+    print('value of p=',p)
+try:
+    display(3)
+    display(5)
+except ZeroDivisionError:
+    print('not possible')
+except NameError:
+    print("p not defined")
