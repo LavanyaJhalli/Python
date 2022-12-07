@@ -1,0 +1,58 @@
+#FILE HANDLING
+'''
+the content inside the text file is saved in the form of string data type
+'''
+#open(filename,mode)
+'''
+w->write : new file open
+           old file is overwritten
+r->read: read the content of already created file.
+a-> append: update the file by adding data in the end.
+'''
+
+f=open("myfile.txt",'w')
+f.write("lavanya\n")
+f.write("12216839\n")
+f.write("CSE\n")
+f.write("k22gp\n")
+f.close()
+
+f=open("myfile.txt","r")
+'''for x in f:
+    print(x)'''
+
+print(f.read())
+f.close()
+
+'''
+n=int(input("Enter no.of students:"))
+for x in range(n):
+    name=input("Enter name:")
+    reg=input("enter reg:")
+    cgpa=input("enter cgpa:")
+    f=open("data.txt","a")
+    f.write(name)
+    f.write("\n")
+    f.write
+    f.write("cgpa")
+    f.write('''
+
+name=input("Enter name:")
+reg=input("enter reg:")
+marks=[]
+n=int(input("Enter no.of courses:"))
+for x in range(n):
+    m=int(input("enter marks"))
+    marks.append(m)
+total=sum(marks)
+per=total/10
+cgpa=per/10
+f=open("studentdata.txt","w")
+f.write(name)
+f.write("\n")
+f.write(reg)
+f.write("\n")
+f.write("per")
+f.write(str(per))
+f.write("\n")
+f.close()
