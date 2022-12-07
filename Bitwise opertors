@@ -1,0 +1,22 @@
+#bitwise AND (&) 
+a=13
+b=12 print(a&b)  
+#bitwise OR (|)
+a=19
+b=15
+print(a|b)  
+#bitwise NOT (~)
+a=-17 
+print(~a)  
+#bitwise XOR (^) 
+a=5 
+b=4 
+print(a^b)  
+#bitwise LEFTSHIFT (<<)
+a=15 
+b=2 
+print(a<<b) 
+#bitwise RIGHTSHIFT(>>)
+a=12 
+b=2
+print(a>>b)
