@@ -1,0 +1,10 @@
+name=str(input("enter name:"))
+gen=str(input("Enter gender as B or G:"))
+a=name.lower()
+b=name.upper()
+if gen=='B' or gen=='b'or gen.upper()=='BOY':
+    print(a)
+elif gen=='G' or gen=='g' or gen.upper()=='GIRL':
+    print(b)
+else:
+    print("invalid input")
