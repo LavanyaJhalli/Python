@@ -1,0 +1,17 @@
+a=int(input("enter the value of a:"))
+b=int(input("enter the value of b:"))
+c=int(input("enter the value of c:"))
+
+d=a>b
+e=b<c
+f=a==b
+g=a>=b
+h=b<=c
+i=a!=c
+
+print("outcome of relation1 a>b:",d)
+print("outcome of relation2 b<c:",e)
+print("outcome of relation3 a==b:",f)
+print("outcome of relation4 a>=b:",g)
+print("outcome of relation5 b<=c:",h)
+print("outcome of relation6 a!=c:",i)
