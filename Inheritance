@@ -1,0 +1,52 @@
+class student:
+    def getdetails(self,nm,r,b):
+        self.name=nm
+        self.reg=r
+        self.branch=b
+class course:
+    def getcourse(self,c1,c2,c3,c4,c5):
+        self.cn1=c1
+        self.cn2=c2
+        self.cn3=c3
+        self.cn4=c4
+        self.cn5=c5
+class marks:
+    def getmarks(self,m1,m2,m3,m4,m5):
+         self.cm1=m1
+         self.cm2=m2
+         self.cm3=m3
+         self.cm4=m4
+         self.cm5=m5
+         self.total=(self.cm1+self.cm2+self.cm3+self.cm4+self.cm5)
+class result(student,course,marks):
+    def displayresult(self):
+        self.per=(self.total/500)*100
+        self.cgpa=self.per/10
+        
+        print("Name=",self.name)
+        print("Reg=",self.reg)
+        print("Branch=",self.branch)
+        print("Course Name=",self.cn1,"Marks",self.cm1)
+        print("CGPA=",self.cgpa)
+        
+
+name=input("Name:")
+reg=int(input("Reg-no:"))
+b=input("select branch:")
+cn1=input("Enter course name:")
+cm1=int(input("enter marks"))
+cn2=input("Enter course name:")
+cm2=int(input("enter marks"))
+cn3=input("Enter course name:")
+cm3=int(input("enter marks"))
+cn4=input("Enter course name:")
+cm4=int(input("enter marks"))
+cn5=input("Enter course name:")
+cm5=int(input("enter marks"))
+
+a=result()
+a.getdetails(name,reg,b)
+a.getcourse(cn1,cn2,cn3,cn4,cn5)
+a.getmarks(cm1,cm2,cm3,cm4,cm5)
+a.displayresult()
+
