@@ -1,0 +1,8 @@
+a=15
+b=17
+c=13
+p=a>b and b>c and a==c
+q=a<b or b<c or b!=c
+r=not(a<b and b>c or c==a)
+
+print(p,q,r)
